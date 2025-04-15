@@ -1,0 +1,165 @@
+/* Custom styles for Bank Management System */
+
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #388E3C;
+    --primary-light: #81C784;
+    --primary-lighter: #C8E6C9;
+    --text-on-primary: #FFFFFF;
+}
+
+/* Hero section styling */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--text-on-primary);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+/* Button styling */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-on-primary);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--primary-lighter);
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--primary-lighter);
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* Card background colors */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--primary-light) !important;
+}
+
+.bg-info {
+    background-color: var(--primary-lighter) !important;
+    color: #333 !important;
+}
+
+/* Badge colors */
+.badge.bg-success {
+    background-color: var(--primary-color) !important;
+}
+
+.badge.bg-warning {
+    background-color: #FFC107 !important;
+}
+
+/* Chart colors */
+.chart-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Animation for icons */
+.fas {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .fas {
+    transform: scale(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+} 
